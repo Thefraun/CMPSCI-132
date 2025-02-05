@@ -1,0 +1,60 @@
+a = [1, 2] is list
+b = list(a) creates new list, but mem values of indexes point to same as a
+a = a + [3, 4] re-assigns mem value, but a+=[3, 4] extends a
+arr = [[1,2,3][4,5,6][7,8,9]] -> arr points to 100, [1,2,3] points to 200, [1] points to 300, so on
+
+tuple is ordered, immutable version of a list
+
+string is immutable sequence of characters
+its elements are located in contiguous memory space
+
+set is a collection of unique, unordered, immutable elements
+set is mutable, but elements are immutable
+set is based on hash table
+a = {1, 2}
+b = {2, 3}
+a | b = {1, 2, 3}
+a & b = {2}
+a - b = {1}, b - a = {3}
+a ^ b = {1, 3}
+a.isdisjoint(b) == False
+a.issubset(b) == False
+a==b == False
+a!=b == True
+a = b changes pointer of a to b
+
+dictionary is a set of distinct key to associated value
+a = {key: value}
+key has to be immutable, value can be any
+a[new key] = new value appends new k, v pair into a
+
+logical operators: and, not, or
+
+equality operators: is, is not, ==, !=
+is, is not checks memory location (immutable objects with same values are equal(only if initialised with same value, not if changed to have same value))
+==, != checks value
+
+a = [1, 2, 3, 4, 5]
+a[1:3] -> [2, 3]
+a[1:4:2] -> [2, 4]
+a + [6] -> [1, 2, 3, 4, 5, 6]
+a * 2 -> [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+
+yield statement keeps function running, essentially a return without breaking
+
+fp = open('a.txt', 'r')
+a = []
+for line in fp:
+    for word in line.split():
+    v = int(word)
+    a.append(v)
+fp.close()
+
+Abstract Data Type (ADT) is a theoretical concept and model for data type where data types are defined by behaviour
+ADT is defined in terms of data (or value), operations on data, behaviour of operations
+
+Information hiding is a concept of separating internal detail from the other parts of by providing an interface
+Information that is likely to change, including internal data structure and its implementation, is commonly hidden
+
+If private value is in the same class, can be accessed by another var in the class
+__iadd__ handles +=, __add__ handles +
