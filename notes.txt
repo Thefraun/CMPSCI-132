@@ -58,3 +58,46 @@ Information that is likely to change, including internal data structure and its 
 
 If private value is in the same class, can be accessed by another var in the class
 __iadd__ handles +=, __add__ handles +
+
+__slots__ is a special class attribute, which restricts creating a member var(attr)
+It reduces memory usage and improves performance
+Cannot create any new self. vars in the class other than specified by __slots__
+
+class Node:
+    __slots__ = ['data', 'next']
+    def __init__(self, data, next=None):
+        self.data = data
+        self.next = next
+
+Linked list has two main parts: head and tail
+If the linked list has 0 elements, head and tail point None
+
+Double linked list has head and tail
+
+On test, must implement queue First, Dequeue with tail as first element of queue
+
+To utilise a stack in order to find/error check delimiters:
+while there are delims:
+    d = next delim
+    if d is open delim:
+        push(d)
+    else:
+        t = pop()
+        if t match d:
+            report
+        else:
+        error
+
+Infix notation 3 + 2, Postfix 32+
+Infix (3 + 2) * 4, Postfix 32+ 4*
+Infix 3 + 2 * 4, Postfix 3 24* +
+Infix (3/5) + (2 * 4), Postfix 35/ 24* +
+3 + 2 * 4 - 5, 3 24* + 5 -
+
+On test, will have to implement linked list, make stack with linked list, solve problem with stack (i.e. calculating postfix equation)
+
+Preorder traversal bin tree (VLR) -> Current, left, right
+Inorder (LVR) -> Left, current, right
+Postorder (LRV) -> Left, right, current
+
+Breadth first -> Go across first, then down when reached end of row
