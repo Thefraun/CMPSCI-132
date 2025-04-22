@@ -101,3 +101,9 @@ Inorder (LVR) -> Left, current, right
 Postorder (LRV) -> Left, right, current
 
 Breadth first -> Go across first, then down when reached end of row
+
+Deleting and Adding to binary tree are certainly part of final exam, must remember algorithms, though may provide pseudocode
+
+Linear Chain in BST - Insert O(N), Delete O(N), Search O(N)
+Complete BST - Insert O(log(N)), Delete O(log(N)), Search O(log(n))
+AVL BST - Insert O(log(N)), Delete O(log(N)), Search O(log(n))

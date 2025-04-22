@@ -1,3 +1,21 @@
+#---------------------------------------------------------------------
+# Name: Logan Fraunfelter
+# Email: lsf5185@psu.edu
+# Class: CMPSC 132
+# Program 1.4 / HW 4
+# Due Date: April 10, 2025
+#
+# Description: This program accepts command line arguments specifying
+# whether to perform linked list operations or conversion and
+# evaluation of an operation, given in infix notation, and performs
+# the required operations.
+#
+# Acknowledgement:
+# I based my implementation of infix to postfix conversion and
+# evaluation of a postfix operation on the algorithm provided in
+# the class notes.
+#---------------------------------------------------------------------
+
 # Create a linked list to serve as foundation for the stack
 class DLinkedList():
     
